@@ -8,7 +8,6 @@ name_file = sys.argv[4]
 os.system("rm -rf /home/face/result")
 os.mkdir("/home/face/result")
 os.system("/home/face/index/workspace/example %s %d %d" % (feature_file, classes, feature_num))
-classes = int(sys.argv[1])
 work_dir ="/home/face/result/"
 for i in range(classes):
     if not os.path.exists(work_dir + str(i)):
